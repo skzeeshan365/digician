@@ -151,3 +151,8 @@ artifacts/*.keras
 # OS junk
 .DS_Store
 Thumbs.db
+
+notebook/*
+
+# but allow this specific file
+!notebook/model_training.ipynb
