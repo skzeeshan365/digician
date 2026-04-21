@@ -1,0 +1,11 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+Flask
+dill==0.4.1
+tensorflow==2.21.0
+pillow==12.2.0
+
+#-e .

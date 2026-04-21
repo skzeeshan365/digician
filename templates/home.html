@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Recognition</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0b1220;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 14px;
+            width: 420px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            color: #cbd5f5;
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            background: #3b82f6;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        .image-box {
+            margin-top: 20px;
+        }
+
+        .image-box img {
+            width: 180px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .result-box {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 8px;
+            background: #0f172a;
+            border: 1px solid #334155;
+        }
+
+        .digit {
+            font-size: 28px;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 5px;
+        }
+
+        .label {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Handwritten Digit Recognition</h1>
+    <div class="subtitle">Upload an image to detect the digit</div>
+
+    <form action="{{ url_for('predict_datapoint') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput" required>
+        <button type="submit">Predict Digit</button>
+    </form>
+
+    <!-- BEFORE prediction preview -->
+    <div class="image-box" id="previewBox" style="display:none;">
+        <div class="label">Preview</div>
+        <img id="previewImage">
+    </div>
+
+    <!-- AFTER prediction -->
+    {% if image_url %}
+    <div class="image-box">
+        <div class="label">Processed Image</div>
+        <img src="{{ image_url }}">
+    </div>
+    {% endif %}
+
+    <!-- RESULT -->
+    {% if results %}
+    <div class="result-box">
+        <div class="digit">Digit: {{ results.digit }}</div>
+        <div class="meta">
+            Confidence: {{ results.confidence }} |
+            Inverted: {{ results.inverted }}
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    // live preview before submit
+    const input = document.getElementById("fileInput");
+    const previewBox = document.getElementById("previewBox");
+    const previewImage = document.getElementById("previewImage");
+
+    input.addEventListener("change", function () {
+        const file = this.files[0];
+        if (file) {
+            previewBox.style.display = "block";
+            previewImage.src = URL.createObjectURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>

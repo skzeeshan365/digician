@@ -1,0 +1,48 @@
+name: Build and Push to IBM Container Registry
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Install IBM Cloud CLI
+    - name: Install IBM Cloud CLI
+      run: |
+        curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+
+    # Login using API key
+    - name: Login to IBM Cloud
+      run: |
+        ibmcloud login --apikey ${{ secrets.IBM_API_KEY }} -r in-che
+
+    # Install container registry plugin
+    - name: Install Container Registry Plugin
+      run: |
+        ibmcloud plugin install container-registry -f
+
+    # Login Docker to IBM registry
+    - name: Login to IBM Container Registry
+      run: |
+        ibmcloud cr login
+
+    # Build Docker image
+    - name: Build Docker Image
+      run: |
+        docker build -t digit-app .
+
+    # Tag image for IBM registry
+    - name: Tag Image
+      run: |
+        docker tag digit-app in.icr.io/digician/digit-app:latest
+
+    # Push image
+    - name: Push Image
+      run: |
+        docker push in.icr.io/digician/digit-app:latest
