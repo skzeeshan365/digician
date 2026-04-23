@@ -23,7 +23,7 @@ class PredictPipeline:
 
     def predict(self, image_path):
         try:
-            model = load_model(self.model_path)
+            model = load_model(self.model_path, compile=False)
 
             img = self.preprocess_image(image_path)
 
