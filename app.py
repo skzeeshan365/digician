@@ -37,7 +37,8 @@ def predict_datapoint():
         file_path = os.path.join(upload_dir, secure_filename(file.filename))
         file.save(file_path)
 
-        image_url = f"/{file_path.replace('\\', '/')}"
+        clean_path = file_path.replace("\\", "/")
+        image_url = f"/{clean_path}"
 
         print("File saved at:", file_path)
 
