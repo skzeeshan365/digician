@@ -40,8 +40,6 @@ def predict_datapoint():
         clean_path = file_path.replace("\\", "/")
         image_url = f"/{clean_path}"
 
-        print("File saved at:", file_path)
-
         pipeline = PredictPipeline()
 
         digit, confidence, inverted = pipeline.predict(file_path)
