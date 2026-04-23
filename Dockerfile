@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # copy model correctly
-COPY artifacts/mnist_cnn.keras /app/artifacts/mnist_cnn.keras
+COPY artifacts/mnist_cnn.h5 /app/artifacts/mnist_cnn.h5
 
 EXPOSE 5000
 
