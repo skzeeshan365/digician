@@ -2,7 +2,8 @@ import os
 import sys
 import numpy as np
 from PIL import Image
-import keras
+from tensorflow.keras.models import load_model
+
 from src.exception import CustomException
 
 
@@ -22,7 +23,7 @@ class PredictPipeline:
 
     def predict(self, image_path):
         try:
-            model = keras.models.load_model(self.model_path, compile=False)
+            model = load_model("artifacts/mnist_cnn.h5", compile=False)
 
             img = self.preprocess_image(image_path)
 

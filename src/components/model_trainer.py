@@ -62,7 +62,7 @@ class ModelTrainer:
 
             logging.info("Saving model")
 
-            model.save(self.config.trained_model_file_path)
+            model.save("artifacts/mnist_cnn.h5")
 
             return acc
 
