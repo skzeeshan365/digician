@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.13-slim
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # copy model correctly
-COPY artifacts/mnist_cnn.h5 /app/artifacts/mnist_cnn.h5
+COPY artifacts/mnist_cnn.keras /app/artifacts/mnist_cnn.keras
 
 EXPOSE 5000
 
