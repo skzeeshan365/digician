@@ -1,1 +1,189 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Correct Supabase UMD -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            width: 320px;
+        }
+
+        input {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            border: none;
+            background: #22c55e;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: #64748b;
+        }
+
+        .logout {
+            background: #ef4444;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #status {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Digit Classifier</h2>
+
+    <!-- LOGGED OUT -->
+    <div id="logged-out">
+        <input type="email" id="email" placeholder="Enter email">
+        <button id="login-btn">Send Magic Link</button>
+        <p id="status"></p>
+    </div>
+
+    <!-- LOGGED IN -->
+    <div id="logged-in" class="hidden">
+        <p>Logged in</p>
+        <a href="/predictdata">Start Prediction</a>
+        <button class="logout" id="logout-btn">Logout</button>
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // CREATE CLIENT (no naming conflict)
+    const sbClient = supabase.createClient(
+        "https://bpcvatwasmuunonabhuo.supabase.co",
+        "sb_publishable_DSQerCVbWEo25ASsjNZofQ_C1XZ5jYA"
+    );
+
+    const loginBtn = document.getElementById("login-btn");
+    const logoutBtn = document.getElementById("logout-btn");
+    const status = document.getElementById("status");
+
+    const loggedInDiv = document.getElementById("logged-in");
+    const loggedOutDiv = document.getElementById("logged-out");
+
+    // ---------------- LOGIN ----------------
+    loginBtn.addEventListener("click", async () => {
+        const email = document.getElementById("email").value;
+
+        if (!email) {
+            status.innerText = "Enter email";
+            return;
+        }
+
+        loginBtn.disabled = true;
+        loginBtn.innerText = "Sending...";
+        status.innerText = "";
+
+        try {
+            const res = await fetch("/auth/login", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({ email })
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                status.innerText = data.message;
+                loginBtn.disabled = false;
+                loginBtn.innerText = "Send Magic Link";
+                return;
+            }
+
+            status.innerText = "Check your email";
+            loginBtn.innerText = "Sent ✓";
+
+        } catch (e) {
+            console.error(e);
+            status.innerText = "Error";
+            loginBtn.disabled = false;
+            loginBtn.innerText = "Send Magic Link";
+        }
+    });
+
+    // ---------------- SESSION ----------------
+    async function handleSession() {
+        const { data: { session } } = await sbClient.auth.getSession();
+
+        if (session) {
+            loggedOutDiv.classList.add("hidden");
+            loggedInDiv.classList.remove("hidden");
+
+            // redirect only AFTER actual email click (token present)
+            if (window.location.hash.includes("access_token")) {
+                window.location.href = "/predictdata";
+            }
+        } else {
+            loggedInDiv.classList.add("hidden");
+            loggedOutDiv.classList.remove("hidden");
+        }
+    }
+
+    // ---------------- LOGOUT ----------------
+    logoutBtn.addEventListener("click", async () => {
+        await sbClient.auth.signOut();
+        handleSession();
+    });
+
+    // ---------------- INIT ----------------
+    handleSession();
+
+    // ---------------- AUTH STATE LISTENER ----------------
+    sbClient.auth.onAuthStateChange(() => {
+        handleSession();
+    });
+
+});
+</script>
+
+</body>
+</html>
