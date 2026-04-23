@@ -23,7 +23,7 @@ class PredictPipeline:
 
     def predict(self, image_path):
         try:
-            model = load_model("artifacts/mnist_cnn.h5", compile=False)
+            model = load_model(self.model_path)
 
             img = self.preprocess_image(image_path)
 
