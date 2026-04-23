@@ -1,0 +1,29 @@
+# Ignore notebooks
+notebook/
+*.ipynb
+
+# Ignore logs
+logs/
+*.log
+
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+
+# Git + env
+.git/
+.gitignore
+.env
+.venv/
+
+# IDE garbage
+.idea/
+.vscode/
+
+# OS nonsense
+.DS_Store
+Thumbs.db
+
+# Large training/data files (you already suffered once)
+*.csv
