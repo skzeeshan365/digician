@@ -56,6 +56,7 @@ def predict_datapoint():
         )
 
 
+
 @app.route('/artifacts/prediction/<filename>')
 def uploaded_file(filename):
     return send_from_directory('artifacts/prediction', filename)
