@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: ap-south-1
   ECR_REPOSITORY: digician
   IMAGE_TAG: latest
 
@@ -42,7 +42,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: 270474166936.dkr.ecr.us-east-1.amazonaws.com/digician:latest
+        tags: 270474166936.dkr.ecr.ap-south-1.amazonaws.com/digician:latest
 
         # ⚡ caching magic
         cache-from: type=gha
