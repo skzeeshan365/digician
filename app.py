@@ -44,6 +44,10 @@ def index():
 
     return render_template('index.html', supabase_key=SUPABASE_KEY)
 
+@app.route("/health")
+def health():
+    return "ok", 200
+
 @app.route('/predict', methods=['GET', 'POST'])
 def predict_datapoint():
     if request.method == 'GET':
