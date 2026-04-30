@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Digit Recognition</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+
     <style>
         body {
             margin: 0;
@@ -106,10 +108,10 @@
     <h1>Handwritten Digit Recognition</h1>
     <div class="subtitle">Upload an image to detect the digit</div>
 
-    <form action="{{ url_for('predict_datapoint') }}" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" id="fileInput" required>
-        <button type="submit">Predict Digit</button>
-    </form>
+    <form id="uploadForm">
+    <input type="file" name="file" id="fileInput" required>
+    <button type="submit">Predict Digit</button>
+</form>
 
     <!-- BEFORE prediction preview -->
     <div class="image-box" id="previewBox" style="display:none;">
@@ -117,13 +119,7 @@
         <img id="previewImage">
     </div>
 
-    <!-- AFTER prediction -->
-    {% if image_url %}
-    <div class="image-box">
-        <div class="label">Processed Image</div>
-        <img src="{{ image_url }}">
-    </div>
-    {% endif %}
+
 
     <!-- RESULT -->
     {% if results %}
@@ -138,18 +134,65 @@
 </div>
 
 <script>
-    // live preview before submit
-    const input = document.getElementById("fileInput");
-    const previewBox = document.getElementById("previewBox");
-    const previewImage = document.getElementById("previewImage");
+const sbClient = supabase.createClient(
+    "https://bpcvatwasmuunonabhuo.supabase.co",
+    "{{ supabase_key }}"
+);
 
-    input.addEventListener("change", function () {
-        const file = this.files[0];
-        if (file) {
-            previewBox.style.display = "block";
-            previewImage.src = URL.createObjectURL(file);
-        }
+const input = document.getElementById("fileInput");
+const previewBox = document.getElementById("previewBox");
+const previewImage = document.getElementById("previewImage");
+const form = document.getElementById("uploadForm");
+
+// preview
+input.addEventListener("change", function () {
+    const file = this.files[0];
+    if (file) {
+        previewBox.style.display = "block";
+        previewImage.src = URL.createObjectURL(file);
+    }
+});
+
+// submit with auth
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const file = input.files[0];
+    if (!file) return;
+
+    const { data: { session } } = await sbClient.auth.getSession();
+
+    if (!session) {
+        window.location.href = "/";
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    const res = await fetch("/predict", {
+        method: "POST",
+        headers: {
+            Authorization: `Bearer ${session.access_token}`
+        },
+        body: formData
     });
+
+    const html = await res.text();
+
+const temp = document.createElement("div");
+temp.innerHTML = html;
+
+const images = temp.querySelectorAll(".image-box");
+const newImage = images.length > 1 ? images[1] : images[0];
+const newResult = temp.querySelector(".result-box");
+
+document.querySelectorAll(".image-box:not(#previewBox), .result-box")
+    .forEach(el => el.remove());
+
+if (newImage) document.querySelector(".container").appendChild(newImage);
+if (newResult) document.querySelector(".container").appendChild(newResult);
+});
 </script>
 
 </body>
