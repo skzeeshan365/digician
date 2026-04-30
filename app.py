@@ -7,7 +7,7 @@ from flask import Flask, request, render_template, send_from_directory, jsonify,
 from werkzeug.utils import secure_filename
 
 from src.pipeline.predict_pipeline import PredictPipeline
-from supabase_client import supabase
+from supabase_client import supabase, SUPABASE_KEY
 
 application = Flask(__name__)
 app = application
@@ -42,12 +42,12 @@ def index():
     if user:
         return redirect("/predict")
 
-    return render_template('index.html')
+    return render_template('index.html', supabase_key=SUPABASE_KEY)
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict_datapoint():
     if request.method == 'GET':
-        return render_template('home.html')
+        return render_template('home.html', supabase_key=SUPABASE_KEY)
 
     # POST → require auth
     user = get_user_from_token()
@@ -80,7 +80,8 @@ def predict_datapoint():
     return render_template(
         'home.html',
         results=results,
-        image_url=image_url
+        image_url=image_url,
+        supabase_key=SUPABASE_KEY
     )
 
 

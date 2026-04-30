@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // CREATE CLIENT
     const sbClient = supabase.createClient(
         "https://bpcvatwasmuunonabhuo.supabase.co",
-        "sb_publishable_DSQerCVbWEo25ASsjNZofQ_C1XZ5jYA"
+        "{{ supabase_key }}"
     );
 
     const loginBtn = document.getElementById("login-btn");
