@@ -1,3 +1,4 @@
+import json
 import os
 import re
 import requests
@@ -26,28 +27,10 @@ def get_user_from_token():
     token = auth_header.split(" ")[1]
 
     try:
-        res = requests.get(
-            f"{SUPABASE_URL}/auth/v1/user",
-            headers={
-                "Authorization": f"Bearer {token}"
-            }
-        )
-
-        if res.status_code != 200:
-            return None
-
-        return res.json()
-
+        res = supabase.auth.get_user(token)
+        return res.user
     except Exception:
         return None
-
-
-def require_auth():
-    user = get_user_from_token()
-    if not user:
-        return False
-    return True
-
 
 # ---------------- ROUTES ----------------
 
@@ -61,14 +44,15 @@ def index():
 
     return render_template('index.html')
 
-
 @app.route('/predict', methods=['GET', 'POST'])
 def predict_datapoint():
-    if not require_auth():
-        return redirect("/")
-
     if request.method == 'GET':
         return render_template('home.html')
+
+    # POST → require auth
+    user = get_user_from_token()
+    if not user:
+        return jsonify({"message": "Unauthorized"}), 401
 
     file = request.files['file']
 
@@ -105,9 +89,11 @@ def uploaded_file(filename):
     return send_from_directory('artifacts/prediction', filename)
 
 
-# ---------------- LOGIN ----------------
+ALLOWED_DOMAINS = {"csmu.ac.in"}
 
-ALLOWED_DOMAINS = {"gmail.com", "yourcompany.com"}
+ALLOWED_GMAILS = {
+    "skzeeshan3650@gmail.com",
+}
 
 @app.route("/auth/login", methods=["POST"])
 def login():
@@ -123,7 +109,17 @@ def login():
 
     domain = match.group(1)
 
-    if domain not in ALLOWED_DOMAINS:
+    # Case 1: College domain → allow all
+    if domain in ALLOWED_DOMAINS:
+        pass
+
+    # Case 2: Gmail → allow only whitelisted emails
+    elif domain == "gmail.com":
+        if email not in ALLOWED_GMAILS:
+            return jsonify({"message": "Unauthorized Gmail account"}), 403
+
+    # Case 3: Everything else → reject
+    else:
         return jsonify({"message": "Unauthorized email domain"}), 403
 
     try:

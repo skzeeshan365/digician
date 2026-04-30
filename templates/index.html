@@ -5,7 +5,6 @@
     <title>Digit Classifier</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Correct Supabase UMD -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 
     <style>
@@ -88,7 +87,7 @@
     <!-- LOGGED IN -->
     <div id="logged-in" class="hidden">
         <p>Logged in</p>
-        <a href="/predictdata">Start Prediction</a>
+        <a href="/predict">Start Prediction</a>
         <button class="logout" id="logout-btn">Logout</button>
     </div>
 
@@ -97,7 +96,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-    // CREATE CLIENT (no naming conflict)
+    // CREATE CLIENT
     const sbClient = supabase.createClient(
         "https://bpcvatwasmuunonabhuo.supabase.co",
         "sb_publishable_DSQerCVbWEo25ASsjNZofQ_C1XZ5jYA"
@@ -160,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // redirect only AFTER actual email click (token present)
             if (window.location.hash.includes("access_token")) {
-                window.location.href = "/predictdata";
+                window.location.href = "/predict";
             }
         } else {
             loggedInDiv.classList.add("hidden");
