@@ -47,3 +47,12 @@ jobs:
         # ⚡ caching magic
         cache-from: type=gha
         cache-to: type=gha,mode=max
+
+    # Redeploy
+    - name: Force ECS deployment
+      run: |
+        aws ecs update-service \
+          --cluster digician_ecs_cluster \
+          --service digician-task-service \
+          --force-new-deployment \
+          --region $AWS_REGION
