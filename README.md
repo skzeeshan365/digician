@@ -1,145 +1,130 @@
-### Software and tools requirement
-1. [Github account](https://github.com)
-2. [VS code account](https://code.visualstudio.com)
-
-# 🎓 Student Performance Prediction (ML Project)
+# 🎯 Digit Recognition System (ML + Flask + AWS ECS)
 
 ## 📌 Overview
 
-This project aims to predict student academic performance based on various demographic and educational factors such as gender, parental education, lunch type, and test preparation course.
+This project is a digit recognition system powered by a trained CNN model.
+Users can upload an image of a handwritten digit, and the system predicts the digit along with a confidence score.
 
-The project follows a **modular machine learning pipeline architecture**, including data ingestion, transformation, model training, and evaluation.
+The system includes:
 
----
-
-## 🚀 Project Objectives
-
-* Analyze student performance dataset
-* Build a robust ML pipeline
-* Perform feature engineering and preprocessing
-* Train and evaluate regression models
-* Deploy a reusable and scalable project structure
+* Modular ML pipeline (training and inference)
+* Flask-based web application
+* Supabase authentication (OTP / magic link)
+* Deployment on AWS ECS with Application Load Balancer and SSL
 
 ---
 
-## 🧠 Problem Statement
+## 🚀 Features
 
-Given student attributes, predict the **math score** of a student.
+### 🔢 Digit Prediction
+
+* CNN model (`mnist_cnn.keras`)
+* Outputs:
+
+  * Predicted digit
+  * Confidence score
+  * Inversion flag (if preprocessing was applied)
+
+---
+
+### 🔐 Authentication
+
+* Supabase OTP (magic link login)
+* Domain-based access control:
+
+  * `csmu.ac.in` → allowed
+  * Gmail → restricted to whitelisted users
+
+---
+
+### 🧱 ML Pipeline
+
+```
+src/
+├── components/
+│   ├── data_ingestion.py
+│   ├── data_transformation.py
+│   └── model_trainer.py
+│
+├── pipeline/
+│   ├── train_pipeline.py
+│   └── predict_pipeline.py
+```
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-Student-Performance-Prediction/
+digician/
 │
-├── artifacts/                # Generated files (datasets, models, preprocessor)
-│   ├── data.csv
-│   ├── train.csv
-│   ├── test.csv
-│   ├── preprocessor.pkl
-│   └── model.pkl
-│
-├── notebooks/               # Jupyter notebooks (EDA & experiments)
-│   ├── data/
-│   │    └── stud.csv
-│   ├── 1. EDA STUDENT PERFORMANCE.ipynb
-│   └── 2. MODEL TRAINING.ipynb
+├── artifacts/
+│   ├── mnist_cnn.keras
+│   └── prediction/
 │
 ├── src/
-│   ├── components/
-│   │    ├── data_ingestion.py
-│   │    ├── data_transformation.py
-│   │    └── model_trainer.py
-│   │
-│   ├── pipeline/
-│   │    └── training_pipeline.py
-│   │
-│   ├── exception.py
-│   ├── logger.py
-│   └── utils.py
+├── templates/
+│   ├── index.html
+│   └── home.html
 │
-├── venv/                    # Virtual environment
+├── app.py
+├── supabase_client.py
+├── Dockerfile
 ├── requirements.txt
-├── setup.py
-└── README.md
+└── .github/workflows/deploy.yml
 ```
 
 ---
 
 ## ⚙️ Tech Stack
 
-* **Python 3.10**
-* **Pandas, NumPy**
-* **Scikit-learn**
-* **Matplotlib, Seaborn**
-* **Pickle (Model Serialization)**
+* Python 3.13
+* Flask
+* TensorFlow / Keras
+* Supabase (Authentication)
+* AWS ECS (Fargate)
+* Application Load Balancer
+* AWS ACM (SSL)
+* GitHub Actions (CI/CD)
 
 ---
 
-## 🔄 ML Pipeline Workflow
+## 🔄 ML Workflow
 
 ### 1. Data Ingestion
 
-* Reads dataset from source
-* Splits into train & test datasets
-* Saves raw and processed files
+* Loads dataset
+* Splits into training and test sets
+* Saves to `artifacts/`
 
 ### 2. Data Transformation
 
-* Handles missing values
-* Applies encoding to categorical features
-* Scales numerical features
-* Saves preprocessing pipeline (`preprocessor.pkl`)
+* Preprocessing and scaling
 
 ### 3. Model Training
 
-* Trains regression models
-* Evaluates performance
-* Saves best model (`model.pkl`)
+* Trains CNN model
+* Saves model:
 
----
-
-## 📊 Features Used
-
-### Numerical Features
-
-* writing_score
-* reading_score
-
-### Categorical Features
-
-* gender
-* race_ethnicity
-* parental_level_of_education
-* lunch
-* test_preparation_course
-
----
-
-## 🧪 How to Run the Project
-
-### Step 1: Clone the repository
-
-```bash
-git clone <your-repo-link>
-cd Student-Performance-Prediction
+```
+artifacts/mnist_cnn.keras
 ```
 
-### Step 2: Create & activate virtual environment
+---
+
+## 🧪 Running Locally
+
+### 1. Setup Environment
 
 ```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
-```
-
-### Step 3: Install dependencies
-
-```bash
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Step 4: Run the pipeline
+---
+
+### 2. Run Training
 
 ```bash
 python -m src.components.data_ingestion
@@ -147,68 +132,116 @@ python -m src.components.data_ingestion
 
 ---
 
-## 📈 Sample Output
+### 3. Start Application
 
-After running the pipeline, the following files are generated:
-
-```
-artifacts/
- ├── data.csv
- ├── train.csv
- ├── test.csv
- ├── preprocessor.pkl
- └── model.pkl
+```bash
+python app.py
 ```
 
 ---
 
-## 📌 Key Highlights
+### 4. Access
 
-* Modular and scalable ML architecture
-* Production-level folder structure
-* Custom logging and exception handling
-* Reusable preprocessing pipeline
-* Clean separation of concerns
+```
+http://localhost:5000
+```
 
 ---
 
-## ⚠️ Common Issues & Fixes
+## 🌐 API Endpoints
 
-| Issue                | Solution                         |
-| -------------------- | -------------------------------- |
-| File not found error | Ensure correct working directory |
-| Kernel crash         | Install `ipykernel` in venv      |
-| Model not saving     | Check artifacts path             |
-| Import errors        | Run using `python -m`            |
+### Health Check
 
----
+```
+GET /health
+```
 
-## 📚 Future Improvements
+### Login
 
-* Add Flask/FastAPI deployment
-* Integrate CI/CD pipeline
-* Add model monitoring
-* Hyperparameter tuning
-* Docker containerization
+```
+POST /auth/login
+```
 
----
+### Predict
 
-## 👨‍💻 Author
-
-**Harsh Trivedi**
+```
+POST /predict
+```
 
 ---
 
-## ⭐ Acknowledgements
+## 🔐 Environment Variables
 
-* Scikit-learn documentation
-* Kaggle dataset inspiration
-* ML pipeline best practices
+Required:
+
+```
+SUPABASE_KEY
+```
+
+* Local: `.env`
+* Production: AWS Secrets Manager
 
 ---
 
-## 📬 Contact
+## 🐳 Docker
 
-Feel free to connect for collaboration or queries.
+```dockerfile
+FROM python:3.13-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+COPY artifacts/mnist_cnn.keras /app/artifacts/mnist_cnn.keras
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
+```
+
+---
+
+## ☁️ Deployment
+
+* AWS ECS (Fargate)
+* Application Load Balancer
+* Health check path: `/health`
+* Container port: `5000`
+
+---
+
+## 🔄 CI/CD
+
+GitHub Actions pipeline:
+
+* Builds Docker image
+* Pushes to AWS ECR
+* Triggers ECS service deployment
+
+---
+
+## ⚠️ Common Issues
+
+| Issue               | Cause                          |
+| ------------------- | ------------------------------ |
+| Container exits     | Missing environment variables  |
+| Health check fails  | curl not installed             |
+| 504 Gateway Timeout | App not bound to `0.0.0.0`     |
+| Secrets not loading | Network / IAM misconfiguration |
+| SSL pending         | DNS not propagated             |
+
+---
+
+## 📈 Future Improvements
+
+* Model versioning
+* Batch inference
+* Monitoring and logging
+* UI enhancements
 
 ---
