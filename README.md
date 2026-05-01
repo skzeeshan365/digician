@@ -1,5 +1,3 @@
----
-
 # 🎯 Digit Recognition System (ML + Flask + AWS ECS)
 
 ## 📌 Overview
