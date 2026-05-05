@@ -1,0 +1,13 @@
+[ 2026-04-30 16:01:12,270 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-30 16:01:12,273 ] 97 werkzeug - INFO -  * Debugger PIN: 765-077-187
+[ 2026-04-30 16:01:15,551 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:15] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:15,576 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:15] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:17,555 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:17] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:17,856 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:18,342 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:19,714 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:19] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:19,741 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:20,285 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:20] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:20,331 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:01:39,542 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:01:39] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:02:16,678 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading

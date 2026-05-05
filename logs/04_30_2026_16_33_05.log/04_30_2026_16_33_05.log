@@ -1,0 +1,8 @@
+[ 2026-04-30 16:33:05,809 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-30 16:33:05,811 ] 97 werkzeug - INFO -  * Debugger PIN: 765-077-187
+[ 2026-04-30 16:33:09,068 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:09] "GET / HTTP/1.1" 200 -
+[ 2026-04-30 16:33:10,271 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:10] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:33:14,265 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:14] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:33:21,087 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:21] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:33:23,277 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:33:53,417 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading

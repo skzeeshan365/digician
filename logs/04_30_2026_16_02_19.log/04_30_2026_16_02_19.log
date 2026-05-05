@@ -1,0 +1,79 @@
+[ 2026-04-30 16:02:20,272 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-30 16:02:20,274 ] 97 werkzeug - INFO -  * Debugger PIN: 765-077-187
+[ 2026-04-30 16:02:21,323 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:02:21] "GET / HTTP/1.1" 200 -
+[ 2026-04-30 16:02:23,346 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:02:23] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:03:01,672 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:03:01] "[31m[1mPOST /predict HTTP/1.1[0m" 401 -
+[ 2026-04-30 16:04:07,594 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:07] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:04:12,528 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:12] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:04:17,679 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:17] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:04:18,283 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:18] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:04:18,585 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:18] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:04:23,763 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:23] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:04:30,985 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:04:30] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:06:29,620 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:06:29] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:06:34,144 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:06:34] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:06:36,104 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:06:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:07:53,025 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:07:53] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:07:53,051 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:07:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:07:58,328 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:07:58,445 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-30 16:07:58,710 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:07:58] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:07:59,036 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:07:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:07:59,064 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:07:59] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:08:11,779 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:11] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:08:17,428 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:08:17,574 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:17] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:08:17,886 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:17] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:08:24,899 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:24] "GET /predict?file=_MRN0952.png HTTP/1.1" 200 -
+[ 2026-04-30 16:08:29,028 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:29] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:08:35,632 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:08:35,763 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:35] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:08:35,769 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:08:36,089 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:36] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:08:45,095 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:45] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:08:45,512 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:08:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:10:03,682 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:10:03,813 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:03] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:10:03,818 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:10:04,138 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:04] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:10:09,632 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:09] "GET /predict?file=WhatsApp+Image+2026-04-28+at+4.28.10+PM+(1).jpeg HTTP/1.1" 200 -
+[ 2026-04-30 16:10:09,946 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:09] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:10:11,432 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:11] "GET /predict?file=WhatsApp+Image+2026-04-28+at+4.28.10+PM+(1).jpeg HTTP/1.1" 200 -
+[ 2026-04-30 16:10:11,447 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:10:16,896 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:16] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:10:17,209 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:10:22,652 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:10:22,735 ] 157 tensorflow - WARNING - 5 out of the last 9 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000021519AEA5C0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[ 2026-04-30 16:10:22,784 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:22] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:10:22,788 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:22] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:10:30,741 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:10:30,828 ] 157 tensorflow - WARNING - 6 out of the last 11 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000021519987D80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[ 2026-04-30 16:10:30,873 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:30] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:10:30,877 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:10:30] "GET /artifacts/prediction/MRN0952.png HTTP/1.1" 200 -
+[ 2026-04-30 16:12:25,678 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:12:25] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:12:25,692 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:12:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:12:30,209 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:12:30,339 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:12:30] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:12:30,657 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:12:30] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:12:39,062 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:12:39,195 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:12:39] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:12:39,506 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:12:39] "GET /artifacts/prediction/MRN0952.png HTTP/1.1" 200 -
+[ 2026-04-30 16:13:28,016 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:13:28] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:13:28,330 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:13:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:13:29,812 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:13:29] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:13:35,139 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:13:35,276 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:13:35] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:13:39,348 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:13:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:15:10,162 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:10] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:15:10,177 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:15:14,938 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:15:15,063 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:15] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:15:15,375 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:15] "GET /artifacts/prediction/digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:15:27,748 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:27] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:15:28,058 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:15:32,976 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:15:33,104 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:33] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:15:38,316 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:15:38,540 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:38] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:15:47,063 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:15:47] "GET /predict HTTP/1.1" 200 -
+[ 2026-04-30 16:17:08,740 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\supabase_client.py', reloading

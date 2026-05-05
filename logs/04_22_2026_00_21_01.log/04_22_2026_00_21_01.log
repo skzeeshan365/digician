@@ -1,0 +1,5 @@
+[ 2026-04-22 00:21:01,206 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-22 00:21:01,209 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-22 00:21:41,882 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-22 00:21:42,169 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2026 00:21:42] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-22 00:21:42,211 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2026 00:21:42] "GET /artifacts/prediction/CF1ze.jpg HTTP/1.1" 200 -

@@ -1,0 +1,23 @@
+[ 2026-04-24 01:13:34,812 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-24 01:13:34,814 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-24 01:13:34,975 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:13:34] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:13:36,907 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:13:36] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:13:38,240 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:13:38] "[33mGET /predictdata HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:13:44,008 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:13:44] "[32mGET /predict HTTP/1.1[0m" 302 -
+[ 2026-04-24 01:13:44,322 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:13:44] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:18:49,514 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:18:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:18:52,396 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:18:52] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:19:19,092 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:19] "[33mGET /predictdata HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:19:19,393 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:19:21,450 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:21] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:19:21,972 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:21] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:19:21,987 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:21] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:19:24,806 ] 1025 httpx - INFO - HTTP Request: POST https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/otp?redirect_to=http%3A%2F%2Flocalhost%3A5000%2F "HTTP/2 429 Too Many Requests"
+[ 2026-04-24 01:19:24,807 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:24] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+[ 2026-04-24 01:19:47,241 ] 1025 httpx - INFO - HTTP Request: POST https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/otp?redirect_to=http%3A%2F%2Flocalhost%3A5000%2F "HTTP/2 429 Too Many Requests"
+[ 2026-04-24 01:19:47,242 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:19:47] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+[ 2026-04-24 01:20:05,203 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:20:05] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:20:19,823 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:20:19] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:20:20,127 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:20:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:20:22,772 ] 1025 httpx - INFO - HTTP Request: POST https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/otp?redirect_to=http%3A%2F%2Flocalhost%3A5000%2F "HTTP/2 429 Too Many Requests"
+[ 2026-04-24 01:20:22,772 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:20:22] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -

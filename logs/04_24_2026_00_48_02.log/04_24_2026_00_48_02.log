@@ -1,0 +1,32 @@
+[ 2026-04-24 00:48:02,877 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-24 00:48:02,879 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-24 00:48:03,041 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:48:03] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:48:10,752 ] 1025 httpx - INFO - HTTP Request: POST https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/otp "HTTP/2 200 OK"
+[ 2026-04-24 00:48:10,752 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:48:10] "POST /auth/login HTTP/1.1" 200 -
+[ 2026-04-24 00:49:41,715 ] 1025 httpx - INFO - HTTP Request: POST https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/otp "HTTP/2 200 OK"
+[ 2026-04-24 00:49:41,715 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:49:41] "POST /auth/login HTTP/1.1" 200 -
+[ 2026-04-24 00:49:48,396 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:49:48] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:53:56,935 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:53:56] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:03,193 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:03] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:03,667 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:03] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:03,981 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:03] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:05,775 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:05] "[33mGET /admin HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:54:10,145 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:10] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:13,727 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:13] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:23,893 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:23] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:54:26,098 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:54:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:07,235 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:07] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:55:07,252 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:11,743 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:11] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:55:18,879 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:18] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:55:30,292 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:30] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:32,536 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:32] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:55:32,554 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:34,731 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:34] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-04-24 00:55:35,036 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:36,978 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:37,233 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:39,323 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:39] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 00:55:39,639 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:55:52,135 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 00:55:52] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 00:56:54,070 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading

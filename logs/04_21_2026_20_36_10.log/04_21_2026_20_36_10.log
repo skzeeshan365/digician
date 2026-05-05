@@ -1,0 +1,3 @@
+[ 2026-04-21 20:36:10,175 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-21 20:36:10,177 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-21 20:36:25,083 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\src\\components\\data_ingestion.py', reloading

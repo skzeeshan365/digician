@@ -1,0 +1,16 @@
+[ 2026-04-23 23:30:49,564 ] 26 root - INFO - Entered data ingestion
+[ 2026-04-23 23:30:57,127 ] 37 root - INFO - Data ingestion completed
+[ 2026-04-23 23:30:57,171 ] 25 root - INFO - Reading train and test data
+[ 2026-04-23 23:30:59,167 ] 30 root - INFO - Splitting features and labels
+[ 2026-04-23 23:30:59,263 ] 39 root - INFO - Applying normalization
+[ 2026-04-23 23:30:59,402 ] 44 root - INFO - Reshaping into 28x28 images
+[ 2026-04-23 23:30:59,402 ] 49 root - INFO - One-hot encoding labels
+[ 2026-04-23 23:30:59,404 ] 54 root - INFO - Data transformation completed
+[ 2026-04-23 23:30:59,464 ] 23 root - INFO - Building CNN model
+[ 2026-04-23 23:30:59,522 ] 38 root - INFO - Compiling model
+[ 2026-04-23 23:30:59,524 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-23 23:30:59,526 ] 46 root - INFO - Training model
+[ 2026-04-23 23:31:30,384 ] 56 root - INFO - Evaluating model
+[ 2026-04-23 23:31:30,778 ] 59 root - INFO - Test Accuracy: 0.9928992986679077
+[ 2026-04-23 23:31:30,778 ] 63 root - INFO - Saving model
+[ 2026-04-23 23:31:30,778 ] 83 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 

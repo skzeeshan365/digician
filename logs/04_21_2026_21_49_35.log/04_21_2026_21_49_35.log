@@ -1,0 +1,19 @@
+[ 2026-04-21 21:49:35,916 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-21 21:49:35,918 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-21 21:49:37,422 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-21 21:49:37,573 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:49:37] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:49:44,644 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:49:44] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:49:48,764 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:49:48] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:51:12,530 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:51:12] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:51:19,054 ] 157 tensorflow - WARNING - 5 out of the last 9 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000002380E2A4EA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[ 2026-04-21 21:51:19,113 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:51:19] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:51:24,802 ] 157 tensorflow - WARNING - 6 out of the last 11 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000002380E176D40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[ 2026-04-21 21:51:24,849 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:51:24] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:51:57,678 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:51:57] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:52:02,715 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:52:02] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:52:06,998 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:52:06] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:52:11,706 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:52:11] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:54:03,736 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:54:03] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:54:10,017 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:54:10] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:54:15,475 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:54:15] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:54:54,934 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\src\\components\\model_trainer.py', reloading

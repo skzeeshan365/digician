@@ -1,0 +1,37 @@
+[ 2026-04-24 00:56:57,611 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-24 00:56:57,613 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-24 01:00:35,716 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:00:35] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:00:41,130 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:00:41] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:00:45,191 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:00:45] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:01:01,646 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:01:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:01:50,371 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:01:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:01:51,282 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:01:51] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:01:51,584 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:01:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:02:07,087 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:02:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:02:07,354 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:02:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:02:09,268 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:02:09] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:02:09,574 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:02:09] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:02:14,591 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:02:14] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:02:14,613 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:02:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:40,111 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:40] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:06:40,127 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:40] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:44,464 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:44] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:06:44,771 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:44] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:45,467 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:45,561 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:45,735 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:46,065 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:47,027 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:47] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:06:48,374 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:48] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:06:48,675 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:06:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:08:16,120 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:08:16] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:08:16,138 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:08:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:09:05,885 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:09:05] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:09:06,188 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:09:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:09:11,874 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:09:11] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+[ 2026-04-24 01:09:20,140 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:09:20] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:09:20,443 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:09:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:10:44,075 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:10:44] "GET / HTTP/1.1" 200 -
+[ 2026-04-24 01:10:44,092 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:10:44] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-24 01:10:46,871 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2026 01:10:46] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+[ 2026-04-24 01:10:59,496 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading

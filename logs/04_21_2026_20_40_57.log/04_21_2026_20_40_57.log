@@ -1,0 +1,8 @@
+[ 2026-04-21 20:41:00,030 ] 25 root - INFO - Entered data ingestion
+[ 2026-04-21 20:41:07,566 ] 36 root - INFO - Data ingestion completed
+[ 2026-04-21 20:41:07,613 ] 25 root - INFO - Reading train and test data
+[ 2026-04-21 20:41:09,615 ] 30 root - INFO - Splitting features and labels
+[ 2026-04-21 20:41:09,711 ] 39 root - INFO - Applying normalization
+[ 2026-04-21 20:41:09,849 ] 44 root - INFO - Reshaping into 28x28 images
+[ 2026-04-21 20:41:09,850 ] 49 root - INFO - One-hot encoding labels
+[ 2026-04-21 20:41:09,851 ] 54 root - INFO - Data transformation completed

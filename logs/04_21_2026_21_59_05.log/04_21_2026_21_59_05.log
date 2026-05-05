@@ -1,0 +1,9 @@
+[ 2026-04-21 21:59:05,197 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-21 21:59:05,199 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-21 21:59:32,588 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-21 21:59:32,763 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:59:32] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 21:59:32,815 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:59:32] "GET /artifacts/prediction/CF1ze.jpg HTTP/1.1" 200 -
+[ 2026-04-21 22:00:51,244 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 22:00:51] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 22:00:59,915 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 22:00:59] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-21 22:01:00,087 ] 97 werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 22:01:00] "GET /artifacts/prediction/CF1ze.jpg HTTP/1.1" 200 -
+[ 2026-04-21 22:03:28,883 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading

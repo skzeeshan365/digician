@@ -1,0 +1,8 @@
+[ 2026-04-23 23:33:05,840 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-23 23:33:05,842 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-23 23:33:07,447 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-23 23:33:07,532 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 23:33:07] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 23:33:07,573 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 23:33:07] "GET /artifacts/prediction/1.webp HTTP/1.1" 200 -
+[ 2026-04-23 23:33:14,569 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 23:33:14] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 23:33:14,754 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 23:33:14] "GET /artifacts/prediction/CF1ze.jpg HTTP/1.1" 200 -
+[ 2026-04-23 23:50:01,122 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\src\\components\\model_trainer.py', reloading

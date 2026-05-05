@@ -1,0 +1,11 @@
+[ 2026-04-30 16:33:56,689 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-30 16:33:56,691 ] 97 werkzeug - INFO -  * Debugger PIN: 765-077-187
+[ 2026-04-30 16:33:56,853 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:56] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:33:56,869 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:33:58,971 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:58] "GET /predict?file=digit-six_36.png HTTP/1.1" 200 -
+[ 2026-04-30 16:33:59,284 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:33:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[ 2026-04-30 16:34:04,015 ] 1025 httpx - INFO - HTTP Request: GET https://bpcvatwasmuunonabhuo.supabase.co/auth/v1/user "HTTP/2 200 OK"
+[ 2026-04-30 16:34:04,067 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-30 16:34:04,197 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 16:34:04] "POST /predict HTTP/1.1" 200 -
+[ 2026-04-30 17:14:24,718 ] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2026 17:14:24] "GET / HTTP/1.1" 200 -
+[ 2026-04-30 17:33:20,353 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading
