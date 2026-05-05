@@ -1,0 +1,3 @@
+[ 2026-04-21 21:58:25,215 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-21 21:58:25,217 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-21 21:58:35,720 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\app.py', reloading

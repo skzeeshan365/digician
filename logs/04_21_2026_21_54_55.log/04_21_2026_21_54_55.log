@@ -1,0 +1,15 @@
+[ 2026-04-21 21:54:57,479 ] 26 root - INFO - Entered data ingestion
+[ 2026-04-21 21:55:05,047 ] 37 root - INFO - Data ingestion completed
+[ 2026-04-21 21:55:05,090 ] 25 root - INFO - Reading train and test data
+[ 2026-04-21 21:55:07,064 ] 30 root - INFO - Splitting features and labels
+[ 2026-04-21 21:55:07,146 ] 39 root - INFO - Applying normalization
+[ 2026-04-21 21:55:07,273 ] 44 root - INFO - Reshaping into 28x28 images
+[ 2026-04-21 21:55:07,273 ] 49 root - INFO - One-hot encoding labels
+[ 2026-04-21 21:55:07,274 ] 54 root - INFO - Data transformation completed
+[ 2026-04-21 21:55:07,334 ] 23 root - INFO - Building CNN model
+[ 2026-04-21 21:55:07,384 ] 38 root - INFO - Compiling model
+[ 2026-04-21 21:55:07,387 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-21 21:55:07,388 ] 46 root - INFO - Training model
+[ 2026-04-21 21:55:38,266 ] 56 root - INFO - Evaluating model
+[ 2026-04-21 21:55:38,635 ] 59 root - INFO - Test Accuracy: 0.9940994381904602
+[ 2026-04-21 21:55:38,636 ] 63 root - INFO - Saving model

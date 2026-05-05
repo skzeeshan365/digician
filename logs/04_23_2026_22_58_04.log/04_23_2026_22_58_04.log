@@ -1,0 +1,8 @@
+[ 2026-04-23 22:58:04,017 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-23 22:58:04,019 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-23 22:58:16,817 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-23 22:58:16,953 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:58:16] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:58:16,997 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:58:16] "GET /artifacts/prediction/1.webp HTTP/1.1" 200 -
+[ 2026-04-23 22:58:20,989 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:58:20] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:58:21,156 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:58:21] "GET /artifacts/prediction/1.webp HTTP/1.1" 200 -
+[ 2026-04-23 22:58:35,201 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\src\\pipeline\\predict_pipeline.py', reloading

@@ -1,0 +1,17 @@
+[ 2026-04-23 22:56:49,426 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-04-23 22:56:49,428 ] 97 werkzeug - INFO -  * Debugger PIN: 416-479-146
+[ 2026-04-23 22:57:02,012 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:02] "[33mGET /admin HTTP/1.1[0m" 404 -
+[ 2026-04-23 22:57:08,622 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:08] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:57:16,850 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-04-23 22:57:17,115 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:17] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:57:17,161 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:17] "GET /artifacts/prediction/1.webp HTTP/1.1" 200 -
+[ 2026-04-23 22:57:24,799 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:24] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:57:24,819 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:24] "GET /artifacts/prediction/CF1ze.jpg HTTP/1.1" 200 -
+[ 2026-04-23 22:57:35,878 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:35] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:57:36,060 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:36] "GET /artifacts/prediction/3d-render-of-metallic-digit-two-symbol-2-isolated-on-white-background-E6W31M.jpg HTTP/1.1" 200 -
+[ 2026-04-23 22:57:43,483 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:43] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:57:43,501 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:43] "GET /artifacts/prediction/1.webp HTTP/1.1" 200 -
+[ 2026-04-23 22:57:49,057 ] 157 tensorflow - WARNING - 5 out of the last 9 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000001DAFAC3BC40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[ 2026-04-23 22:57:49,104 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:49] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-04-23 22:57:49,290 ] 97 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2026 22:57:49] "GET /artifacts/prediction/1.webp HTTP/1.1" 200 -
+[ 2026-04-23 22:57:55,623 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Workspace\\PycharmProjects\\digician\\src\\pipeline\\predict_pipeline.py', reloading
