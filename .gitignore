@@ -155,3 +155,6 @@ notebook/*
 
 # but allow this specific file
 !notebook/model_training.ipynb
+
+.idea/
+.ebextensions/
