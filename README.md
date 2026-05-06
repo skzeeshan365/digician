@@ -5,6 +5,13 @@
 This project is a digit recognition system powered by a trained CNN model.
 Users can upload an image of a handwritten digit, and the system predicts the digit along with a confidence score.
 
+🌐 Live Deployment: https://digician.solusian.com/
+
+⚠️ Access Restriction:
+Only users with email addresses using the `csmu.ac.in` domain are allowed to log in.  
+All other email domains are restricted unless explicitly whitelisted.
+
+
 The system includes:
 
 * Modular ML pipeline (training and inference)
