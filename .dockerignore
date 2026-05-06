@@ -27,3 +27,5 @@ Thumbs.db
 
 # Large training/data files (you already suffered once)
 *.csv
+
+*.pdf
